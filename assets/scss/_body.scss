@@ -5,13 +5,12 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-    flex-direction: column;
     min-height: 100vh;
   }
 
   
   .navegador {
-    list-style-type: none;
+    
     display: flex;
     flex-direction: row;
     padding: 5px;
@@ -22,6 +21,7 @@
   
   
 @mixin li{
+      list-style-type: none;
       display: inline;
       text-align: center;
       margin: 2px;
@@ -52,29 +52,28 @@
     height: 30px;
   }
   
-  .grid-Logo--Circular {
+  .grid-logo--circular {
     position: relative;
-    width: 250px;
-    height: 250px;
     overflow: hidden;
-    border-radius: 50%;
-    margin-left: 15px;
+    width: auto;
+    height: auto;
+    border-radius: 10%;
     margin-top: auto;
     animation: mymove 5s infinite;
   
-    .img{
-      width: 250px;
-      height: 250px;
+    .grid-logo--circular {
+      width: 150px;
+      height: 150px;
     }
   }
   
   @keyframes mymove {
     from {
-      left: 5px;
+      left: 250px;
     }
   
     to {
-      left: 800px;
+      left: 650px;
     }
   }
   
